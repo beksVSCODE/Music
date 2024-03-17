@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Music</title>
+</head>
+
+<body>
+	<main class="main">
+		<div class="container">
+			<div class="tabs">
+				<div class="tabs__nav nav-tabs">
+					<button class="nav-tabs__btn active" type="button"
+						data-tab="#tab_1"><span>Мияги</span><i></i></button>
+					<button class="nav-tabs__btn" type="button" data-tab="#tab_2"><span>Макс Корж</span><i></i></button>
+					<button class="nav-tabs__btn" type="button" data-tab="#tab_3"><span>Виктор Цой</span><i></i></button>
+				</div>
+				<div class="main__block" id="tab_1">
+					<h1 class="main__title">Music Player</h1>
+
+					<div class="music">
+						<div class="music__info info-music">
+							<h4 id="title">Myagi</h4>
+							<div class="info-music__progress progress">
+								<div class="progress__line"></div>
+							</div>
+						</div>
+
+						<audio src="./music/мияги/colors.mp3" id="audio"></audio>
+
+						<div class="music__image">
+							<img src="img/мияги/colors.jpg" alt="music-covers" id="cover">
+						</div>
+
+						<div class="music__navigator">
+							<button id="prev" class="music__btn">
+								<i class="fas fa-backward"></i>
+							</button>
+							<button id="play" class="music__btn music__btn-big">
+								<i class="fas fa-play"></i>
+							</button>
+							<button id="next" class="music__btn">
+								<i class="fas fa-forward"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="./script.js"></script>
+</body>
+
+</html>
